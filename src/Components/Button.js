@@ -1,9 +1,13 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Button = ({name}) => (
-    <StyledButton>{`Hi ${name}`}</StyledButton>
-);
+const Button = ({ text, onClick }) => <StyledButton onClick={onClick}>{text}</StyledButton>;
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
+};
 
 export default Button;
 
@@ -14,4 +18,4 @@ const StyledButton = styled.button`
   color: palevioletred;
   margin: 0 1em;
   padding: 0.25em 1em;
-`
+`;
