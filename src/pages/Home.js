@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button } from 'grommet';
 import Page from '../Components/Page';
 
-class Index extends Component {
+class Home extends Component {
   state = {
     showSidebar: false
   };
@@ -16,10 +16,10 @@ class Index extends Component {
   render() {
     return (
       <Page>
-        <Button>Hello Index</Button>
+        <Button>Hello Home</Button>
       </Page>
     );
   }
 }
 
-export default Index;
+export default Home;
