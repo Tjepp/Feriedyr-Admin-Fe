@@ -2,6 +2,7 @@ const theme = {
   global: {
     colors: {
       brand: '#2b3f47'
+      // brand: '#fff'
     },
     font: {
       family: 'Roboto',

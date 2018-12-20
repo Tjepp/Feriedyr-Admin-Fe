@@ -3,7 +3,7 @@ import { Box, Button } from 'grommet';
 import { Menu } from 'grommet-icons';
 import PropTypes from 'prop-types';
 
-const TopAppBar = ({ onClick }) => (
+const TopAppBar = ({ toggleShowSideBar }) => (
   <Box
     tag="header"
     direction="row"
@@ -11,15 +11,15 @@ const TopAppBar = ({ onClick }) => (
     justify="between"
     background="brand"
     pad={{ left: 'medium', right: 'small', vertical: 'small' }}
-    elevation="medium"
-    style={{ zIndex: '100' }}
+    height="48px"
+    fill="horizontal"
   >
-    <Button icon={<Menu />} onClick={onClick} />
+    <Button icon={<Menu />} onClick={toggleShowSideBar} />
   </Box>
 );
 
 TopAppBar.propTypes = {
-  onClick: PropTypes.func.isRequired
+  toggleShowSideBar: PropTypes.func.isRequired
 };
 
 export default TopAppBar;
