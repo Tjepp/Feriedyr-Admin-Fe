@@ -25,7 +25,7 @@ class Page extends Component {
           <TopAppBar toggleShowSideBar={this.toggleShowSideBar} />
           <Box fill direction="row">
             <SideBar showSidebar={showSidebar} toggleShowSideBar={this.toggleShowSideBar} />
-            <Box fill flex align="center" justify="center">
+            <Box fill flex align="center" justify="center" pad="small">
               {children}
             </Box>
           </Box>
